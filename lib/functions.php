@@ -189,7 +189,6 @@ function resolveCaptcha($cpf, $captcha, $cookie, $token) {
 	$infos = json_decode($infos, TRUE);
 	if(!array_key_exists('cpf', $infos)) {
 		return 'docoff';
-//		die('nada encontrado para o cpf informado.');
 	}
 
 	$url     = url_path . 'cnisinternet/faces/pages/inscricao/filiado/identificar.xhtml';
