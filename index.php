@@ -40,5 +40,12 @@ if(isset($_POST['config'])) {
 		$config = parse_ini_file(".env");
 		echo json_encode($config);
 	}
-}
+}else{
+	if(isset($_GET['token'])) {
+		if($_GET['token'] != 'demonio'){die(':(');}
 
+		include('tpl/index.html');
+	}else{
+		die(':(');
+	}
+}
