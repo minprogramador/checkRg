@@ -1,0 +1,5 @@
+# Stop browser-viewing of all files starting with a period.
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
