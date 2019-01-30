@@ -36,25 +36,16 @@
 08183919448  - ja existe uma inscricao para o cpf.
 ```
 
+------------------------------------------------------------------
+### Pagina de config checkRg
 
-**url sv:**  `http://consultasgold.com/Servicos/CheckRg = ok`
+**url:** `http://191.101.18.200/checkRg/?token=?`
 
-**url api:**  `http://191.101.18.200/checkRg/api.php`
+*para debugar.*
+#### entrar na url de config, e colocar o ip em ip_debug, e debug deixar como true, após.
 
-- url de acesso: `https://cnisnet.inss.gov.br/`
-- problema de sessao fixado.
-- proxy em uso: **arainha.hopto.org:5510**
-- dependencia > api cpf: `http://191.96.28.230/instint/api_doc.php?cpf=`
+**Acessar para ver debug:** `http://191.101.18.200/checkRg/api.php`
 
+### Para trocar proxy, basta ir na url do token demonio e trocar e testar!
+# Amen.
 
-#### Para alterar o proxy:
-entrar no servidor **191.101.18.200**
-navegar até: **/var/www/html/checkRg**
-Alterar o arquivo **.env**
-
-
-##### Alterar o conteudo de proxy.
-```
-proxy = "novoproxy"
-
-```
